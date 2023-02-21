@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px 40px;
+  gap: 20px;
+  background-color: rgb(250, 228, 105);
+  margin-top: 0;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header li:nth-child(2) {
+  margin-left: auto;
+}
+
+.link {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.link:hover {
+  color: rgb(14, 14, 160);
+  font-size: 24px;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.activeLink {
+  font-size: 24px;
+}
+
+.cartWrapper {
+  display: flex;
+  position: relative;
+}
+
+.productsQuantity {
+  font-size: 16px;
+  position: absolute;
+  top: -12px;
+  right: -8px;
+}
