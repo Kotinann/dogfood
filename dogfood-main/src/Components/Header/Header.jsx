@@ -56,6 +56,7 @@ export function Header() {
           <div className={headerStyle.productsQuantity}>{token ? (cart.length || '') : '' }</div>
         </NavLink>
       </li>
+      {!token && (
       <li>
         <NavLink
           className={({ isActive }) => classNames({ [headerStyle.activeLink]: isActive }, [
@@ -66,6 +67,7 @@ export function Header() {
           Регистрация
         </NavLink>
       </li>
+      ) }
       {token ? (
         <li>
           <NavLink

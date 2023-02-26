@@ -14,7 +14,6 @@ import { Filters } from '../Filters/Filters';
 import { Search } from '../Search/Search';
 
 export function Products() {
-  console.log('render products');
   const navigate = useNavigate();
   const token = useSelector(getTokenSelector);
   const search = useSelector(getSearchSelector);
@@ -41,7 +40,7 @@ export function Products() {
   return (
     <>
       <Search />
-      <Filters />
+      {/* <Filters /> */}
       {products[0] && (
       <div className={productsStyle.products}>
         {products.map((product) => (
